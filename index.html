@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lettuce Journey 🥬</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b class="logo">🥬 Lettuce Journey</b>
+<nav><button data-v="home">Care Guide</button><button data-v="me">My Plant</button><button data-v="forum">Forum</button><button data-v="polls">Polls</button><button data-v="board">Leaderboard</button></nav>
+<span id="auth"></span></header>
+<main>
+<section id="v-home">
+<div class="hero"><h1>Grow lettuce. Show up daily. Earn your badges.</h1><p>Welcome, workshop grower! Track your lettuce for a whole year, take on weekly challenges and swap tips with the community.</p><button class="big" onclick="go('me')">Start tracking →</button></div>
+<h2>How to care for lettuce</h2>
+<div class="grid">
+<div class="card"><h3>☀️ Light</h3><p>4–6 hours of sun daily. In hot weather, give it afternoon shade so it stays sweet.</p></div>
+<div class="card"><h3>🌡️ Temperature</h3><p>Cool-season crop. Best at 45–75°F (7–24°C). Heat makes it bitter and sends it to seed (bolting).</p></div>
+<div class="card"><h3>💧 Water</h3><p>Keep soil evenly moist, about 1 inch per week. Water at the base in the morning; shallow roots dry out fast.</p></div>
+<div class="card"><h3>🌱 Sowing</h3><p>Sow seeds ¼" deep. They sprout in 7–10 days. Thin seedlings to 4–6" apart (closer for baby greens).</p></div>
+<div class="card"><h3>🪴 Soil & Pots</h3><p>Loose, rich, well-draining soil, pH 6–7. Containers need drainage holes and 6"+ depth.</p></div>
+<div class="card"><h3>✂️ Harvest</h3><p>Ready in 30–60 days. Cut outer leaves and it keeps growing ("cut-and-come-again"), or cut the whole head at the base.</p></div>
+<div class="card"><h3>🐛 Pests</h3><p>Watch for slugs, aphids and rabbits. Use copper tape, a spray of water or row cover. Remove yellow leaves.</p></div>
+<div class="card"><h3>🔁 A Full Year</h3><p>One lettuce lasts a couple of months, so re-sow every 3–4 weeks. Your "year" is a chain of harvests!</p></div>
+</div>
+<h2>How points work</h2>
+<div class="card"><p>✅ Daily check-in: <b>10 pts</b> + streak bonus (up to +7) &nbsp; 🏅 Weekly challenge: <b>50 pts</b> &nbsp; 📝 Forum post: <b>5</b> &nbsp; 💬 Comment: <b>2</b> &nbsp; 📊 Poll vote: <b>2</b></p>
+<p>Earn badges at milestones. They show on your profile and the leaderboard.</p></div>
+</section>
+<section id="v-me" hidden></section><section id="v-forum" hidden></section><section id="v-polls" hidden></section><section id="v-board" hidden></section><section id="v-profile" hidden></section>
+</main>
+<dialog id="dlg"><form method="dialog" id="authForm"><h2 id="dt">Sign in</h2>
+<input id="fn" placeholder="Your name"><input id="fe" type="email" placeholder="Email" required><input id="fp" type="password" placeholder="Password (6+ chars)" required>
+<p id="ferr" class="err"></p><button class="big">Continue</button> <button type="button" id="sw" class="link"></button> <button type="button" class="link" onclick="dlg.close()">Cancel</button></form></dialog>
+<div id="toast"></div>
+<script src="app.js"></script></body></html>
