@@ -1,0 +1,9 @@
+{
+  "name": "lettuce-journey",
+  "version": "1.0.0",
+  "description": "Year-long lettuce tracker with check-ins, challenges, forum, polls and badges",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "better-sqlite3": "^11.3.0", "express": "^4.19.2" }
+}
