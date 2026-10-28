@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chive Journey 🌿 韭菜</title><link rel="stylesheet" href="style.css"></head><body>
+<header><b class="logo">🌿 Chive Journey 韭菜</b>
+<nav><button data-v="home">Care Guide</button><button data-v="me">My Plant</button><button data-v="forum">Forum</button><button data-v="polls">Polls</button><button data-v="board">Leaderboard</button></nav>
+<span id="auth"></span></header>
+<main>
+<section id="v-home">
+<div class="hero"><h1>Grow Chinese chives. Show up daily. Earn your badges.</h1><p>Welcome, workshop grower! Chinese chives (韭菜, <i>Allium tuberosum</i>) are a tough perennial: plant once, harvest for years. Track yours for a whole year, take on weekly challenges and swap tips with the community.</p><button class="big" onclick="go('me')">Start tracking →</button></div>
+<h2>How to care for Chinese chives</h2>
+<div class="grid">
+<div class="card"><h3>☀️ Light</h3><p>Full sun (6+ hours) is best, but they tolerate partial shade. Great for sunny windowsills and balconies.</p></div>
+<div class="card"><h3>🌡️ Temperature</h3><p>Very hardy. Grow in spring through fall; blades die back in winter and the clump regrows in spring.</p></div>
+<div class="card"><h3>💧 Water</h3><p>About 1 inch per week. Water when the top inch of soil is dry; avoid soggy soil, which rots the roots.</p></div>
+<div class="card"><h3>🌱 Sowing</h3><p>Sow seeds ¼–½" deep (soak overnight to speed things up). They sprout in 7–14 days. Fresh seed works best. Thin to 6" apart.</p></div>
+<div class="card"><h3>🪴 Soil & Pots</h3><p>Well-draining, rich soil, pH 6–7. Use a pot at least 8" deep with drainage holes. Add compost each spring.</p></div>
+<div class="card"><h3>✂️ Harvest</h3><p>Be patient in year one: wait until blades are 6–8" tall. Cut 1–2" above the soil and they grow back in 2–3 weeks. Repeat all season.</p></div>
+<div class="card"><h3>🌸 Flowers</h3><p>White star-shaped flowers appear in late summer. The buds are edible! Deadhead spent blooms so seeds don't spread everywhere.</p></div>
+<div class="card"><h3>🐛 Pests & Division</h3><p>Watch for aphids, thrips and onion fly; remove yellow blades. Every 3–4 years, divide the clump to share with friends.</p></div>
+</div>
+<h2>Your year with chives</h2>
+<div class="card"><p><b>Spring:</b> sow or divide, feed with compost. <b>Summer:</b> start harvesting regularly. <b>Late summer:</b> enjoy flower buds, deadhead the rest. <b>Fall:</b> last big harvest. <b>Winter:</b> leaves die back; keep soil lightly moist and wait. Your chives return!</p></div>
+<h2>How points work</h2>
+<div class="card"><p>✅ Daily check-in: <b>10 pts</b> + streak bonus (up to +7) &nbsp; 🏅 Weekly challenge: <b>50 pts</b> &nbsp; 📝 Forum post: <b>5</b> &nbsp; 💬 Comment: <b>2</b> &nbsp; 📊 Poll vote: <b>2</b></p>
+<p>Earn badges at milestones. They show on your profile and the leaderboard.</p></div>
+</section>
+<section id="v-me" hidden></section><section id="v-forum" hidden></section><section id="v-polls" hidden></section><section id="v-board" hidden></section><section id="v-profile" hidden></section>
+</main>
+<dialog id="dlg"><form method="dialog" id="authForm"><h2 id="dt">Sign in</h2>
+<input id="fn" placeholder="Your name"><input id="fe" type="email" placeholder="Email" required><input id="fp" type="password" placeholder="Password (6+ chars)" required>
+<p id="ferr" class="err"></p><button class="big">Continue</button> <button type="button" id="sw" class="link"></button> <button type="button" class="link" onclick="dlg.close()">Cancel</button></form></dialog>
+<div id="toast"></div>
+<script src="app.js"></script></body></html>
